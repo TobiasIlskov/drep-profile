@@ -1,0 +1,96 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": true,
+    "givenName": {
+      "@value": "Tobias Ilskov"
+    },
+    "motivations": {
+      "@value": "I own a lot of ADA (for someone my age), so I obviously have some financial incentive to see Cardano succeed. However, my unique love and commitment to Cardano come from its unwavering principles and sense of mission. If the original ethos and vision of Satoshi Nakamoto still lives on any chain, it would be Cardano, and that's what keeps me here."
+    },
+    "objectives": {
+      "@value": "My objectives are to help Cardano achieve financial self-sustainability through increasing usability, utility and adoption without compromising our deep-rooted commitment to decentralization, security and the ethos of crypto."
+    },
+    "paymentAddress": {
+      "@value": ""
+    },
+    "qualifications": {
+      "@value": "Those on Cardano Twitter (or X) will know me as a frequent blockchain commentator and educator, especially focused on Cardano. I'm no developer, but I have a firm grasp of blockchain theory and the basic  While I prefer to keep my identity pseudo anonymous, I have extensive background working in direct to client sales, I have a minor in business administration and am currently in an accelerated doctorate program."
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "My DRep Platform"
+        },
+        "uri": {
+          "@value": "https://sites.google.com/view/tobias-ilskov/home"
+        }
+      },
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "X Account (Preferred means of contact)"
+        },
+        "uri": {
+          "@value": "https://x.com/TobiasIlskov"
+        }
+      }
+    ]
+  }
+}
